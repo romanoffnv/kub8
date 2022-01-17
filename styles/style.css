@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: roboto, san-serif;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[2] 50px 50px (auto)[4];
+  -ms-grid-columns: 1fr 8fr 1fr;
+      grid-template: repeat(2, auto) 50px 50px repeat(4, auto)/1fr 8fr 1fr;
+  background-color: #000;
+}
+
+@media (max-width: 550px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    -ms-grid-rows: (auto)[2] 20px 20px (auto)[4];
+        grid-template-rows: repeat(2, auto) 20px 20px repeat(4, auto);
+  }
+}
+
+footer {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 6 / 1 / 6 / 4;
+}
+
+footer .social {
+  margin: 2em auto;
+  width: 30%;
+  font-size: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .social a {
+  color: #ccc;
+}
+
+@media (max-width: 1580px) {
+  footer .social {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1305px) {
+  footer .social {
+    width: 50%;
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 970px) {
+  footer .social {
+    width: 60%;
+  }
+}
+
+@media (max-width: 780px) {
+  footer .social {
+    margin-top: 0;
+    width: 70%;
+  }
+}
+
+@media (max-width: 654px) {
+  footer .social {
+    margin-top: 0;
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  footer .social {
+    margin-top: 0;
+    width: 80%;
+    font-size: 2em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

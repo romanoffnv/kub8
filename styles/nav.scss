@@ -1,0 +1,135 @@
+
+@import "../styles/mixins.scss";
+nav {
+    grid-area: 1 / 1 / 1 / 4;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: #131E24;
+    z-index: 3;
+    @include width890 {
+        height: 135px;
+        flex-direction: column;
+    }
+    @include width845 {
+        height: 130px;
+    }
+    @include width780 {
+        height: 80px;
+    }
+   
+    .logo {
+        width: 10%;
+        @include width1775 {
+            width: 12%;
+        }
+        @include width1500 {
+            width: 15%;
+        }
+        @include width1180 {
+            width: 18%;
+        }
+        @include width890 {
+            margin: 0 auto;
+        }
+        @include width780 {
+            width: 25%;
+        }
+        @include width630 {
+            width: 33%;
+        }
+
+    
+        img {
+            width: 100%;
+            margin: 0.5em auto;
+            height: auto;
+        }
+    }
+    .topMenu {
+        margin: 0em auto;
+        width: 100%;
+        @include width890 {
+            width: 100%;
+        }
+        @include width780 {
+            display: none;
+        }
+        
+        ul {
+            margin: 1.5em auto;
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            @include width1775 {
+                width: 90%;
+            }
+            @include width1500 {
+                width: 100%;
+            }
+            
+        }
+        ul li {
+            list-style-type: none;
+            
+        }
+        ul li a {
+            padding: .5em;
+            font-size: 1.6em;
+            font-weight: 300;
+            text-decoration: none;
+            color: #FFFFFE;
+            transition: all .5s ease-in-out;
+            @include width1305 {
+                font-size: 1.4em;
+            }
+            @include width1050 {
+                font-size: 1.2em;
+            }
+            
+        }
+        ul li a:hover {
+            background-color: beige;
+            color: #000;
+        }
+    }
+    .sideMenu {
+        display: none;
+        
+        @include width780 {
+            display: block;
+            position: absolute;
+            top: .4em;
+            left: .7em;
+            font-size: 2.5em;
+            color: #FFFFFE;
+        }
+        
+    }
+    .sideNavi {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        overflow: hidden; 
+        background-color: #131E24;
+        opacity: 0.9;
+        transition: all .5s ease-in-out;
+        
+
+        li {
+            width: 80%;
+            margin: 1.8em auto;
+            list-style-type: none;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #FFFFFE;
+            font-size: 1.8em;
+        }
+    }
+}

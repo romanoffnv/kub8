@@ -1,0 +1,747 @@
+main {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 5 / 2 / 5 / 3;
+  margin: 7em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1050px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.pentagram {
+  position: relative;
+  margin-right: 10px;
+  width: 45%;
+  height: 100%;
+}
+
+@media (max-width: 1050px) {
+  .pentagram {
+    width: 80%;
+    margin: 1em auto;
+  }
+}
+
+@media (max-width: 780px) {
+  .pentagram {
+    width: 90%;
+  }
+}
+
+.pentagram .txt {
+  font-size: 1.6em;
+  font-weight: 500;
+  color: #ccc;
+  text-align: center;
+}
+
+@media (max-width: 1700px) {
+  .pentagram .txt {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 1500px) {
+  .pentagram .txt {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 1465px) {
+  .pentagram .txt {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 1050px) {
+  .pentagram .txt {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 600px) {
+  .pentagram .txt {
+    font-size: 1.6em;
+  }
+}
+
+.pentagram .circ {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 0.3em;
+  font-size: 3.5em;
+  color: #092c1b;
+  background-color: #ccc;
+  margin: .3em auto;
+}
+
+@media (max-width: 1700px) {
+  .pentagram .circ {
+    width: 100px;
+    height: 100px;
+    font-size: 3.5em;
+    padding: 0.25em;
+  }
+}
+
+.pentagram__polygon {
+  position: relative;
+  background-color: #fff;
+  height: 280px;
+  width: 280px;
+  margin: 25% auto;
+  -webkit-clip-path: polygon(50% 0%, 100% 45%, 80% 100%, 20% 100%, 0 45%);
+          clip-path: polygon(50% 0%, 100% 45%, 80% 100%, 20% 100%, 0 45%);
+}
+
+.pentagram__polygonInner {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 276px;
+  /* container height - (border thickness * 2) */
+  height: 276px;
+  /* container height - (border thickness * 2) */
+  background-color: #000;
+  -webkit-clip-path: polygon(50% 0%, 100% 45%, 80% 100%, 20% 100%, 0 45%);
+          clip-path: polygon(50% 0%, 100% 45%, 80% 100%, 20% 100%, 0 45%);
+}
+
+.pentagram .health {
+  position: absolute;
+  top: 7%;
+  left: 41.5%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1850px) {
+  .pentagram .health {
+    top: 5%;
+    left: 41%;
+  }
+}
+
+@media (max-width: 1700px) {
+  .pentagram .health {
+    top: 3%;
+    left: 38%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .pentagram .health {
+    top: 2%;
+    left: 37.5%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .pentagram .health {
+    top: 1%;
+    left: 38.5%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .pentagram .health {
+    top: 0%;
+    left: 38.5%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .pentagram .health {
+    top: 0%;
+    left: 38%;
+  }
+}
+
+@media (max-width: 1180px) {
+  .pentagram .health {
+    top: 0%;
+    left: 37%;
+  }
+}
+
+@media (max-width: 1118px) {
+  .pentagram .health {
+    top: 0%;
+    left: 36%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .pentagram .health {
+    top: 7%;
+    left: 40%;
+  }
+}
+
+@media (max-width: 970px) {
+  .pentagram .health {
+    top: 4%;
+    left: 39%;
+  }
+}
+
+@media (max-width: 845px) {
+  .pentagram .health {
+    top: 1%;
+    left: 38%;
+  }
+}
+
+@media (max-width: 700px) {
+  .pentagram .health {
+    top: 0;
+    left: 37%;
+  }
+}
+
+@media (max-width: 654px) {
+  .pentagram .health {
+    left: 36%;
+  }
+}
+
+.pentagram .health__text {
+  text-align: center;
+}
+
+.pentagram .health__circle {
+  background-color: #005339;
+}
+
+.pentagram .health .fa-heartbeat {
+  margin-left: .1em;
+  margin-top: .15em;
+}
+
+.pentagram .friends {
+  width: 15%;
+  position: absolute;
+  top: 33%;
+  right: 18%;
+}
+
+@media (max-width: 1900px) {
+  .pentagram .friends {
+    top: 32%;
+    right: 17%;
+  }
+}
+
+@media (max-width: 1800px) {
+  .pentagram .friends {
+    top: 31%;
+    right: 16%;
+  }
+}
+
+@media (max-width: 1700px) {
+  .pentagram .friends {
+    top: 28%;
+    right: 15%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .pentagram .friends {
+    top: 26%;
+    right: 13%;
+  }
+}
+
+@media (max-width: 1465px) {
+  .pentagram .friends {
+    top: 29%;
+    right: 11%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .pentagram .friends {
+    top: 32%;
+    right: 17%;
+  }
+}
+
+@media (max-width: 845px) {
+  .pentagram .friends {
+    top: 31%;
+    right: 13%;
+  }
+}
+
+@media (max-width: 800px) {
+  .pentagram .friends {
+    top: 29%;
+    right: 14%;
+  }
+}
+
+@media (max-width: 600px) {
+  .pentagram .friends {
+    right: 10%;
+  }
+}
+
+.pentagram .friends__circle {
+  background-color: #FAD419;
+}
+
+.pentagram .friends__text {
+  text-align: right;
+}
+
+.pentagram .relationship {
+  position: absolute;
+  width: 46%;
+  top: 65%;
+  right: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+@media (max-width: 1800px) {
+  .pentagram .relationship {
+    top: 64%;
+    right: 11%;
+  }
+}
+
+@media (max-width: 1700px) {
+  .pentagram .relationship {
+    top: 62%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .pentagram .relationship {
+    top: 59%;
+    right: 9%;
+  }
+}
+
+@media (max-width: 1563px) {
+  .pentagram .relationship {
+    top: 56%;
+    right: 9%;
+  }
+}
+
+@media (max-width: 1465px) {
+  .pentagram .relationship {
+    top: 68%;
+    right: 8%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .pentagram .relationship {
+    top: 64%;
+    right: 11%;
+  }
+}
+
+@media (max-width: 845px) {
+  .pentagram .relationship {
+    top: 67%;
+    right: 8%;
+  }
+}
+
+@media (max-width: 780px) {
+  .pentagram .relationship {
+    top: 67%;
+  }
+}
+
+@media (max-width: 600px) {
+  .pentagram .relationship {
+    top: 70%;
+    right: 3%;
+  }
+}
+
+.pentagram .relationship__circle {
+  background-color: #A6BB22;
+}
+
+.pentagram .relationship__text {
+  text-align: right;
+}
+
+.pentagram .money {
+  position: absolute;
+  top: 65%;
+  left: 16%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  width: 38%;
+}
+
+@media (max-width: 1800px) {
+  .pentagram .money {
+    top: 64%;
+    left: 15%;
+  }
+}
+
+@media (max-width: 1700px) {
+  .pentagram .money {
+    top: 62%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .pentagram .money {
+    top: 59%;
+    left: 13%;
+  }
+}
+
+@media (max-width: 1563px) {
+  .pentagram .money {
+    top: 56%;
+    left: 13%;
+  }
+}
+
+@media (max-width: 1465px) {
+  .pentagram .money {
+    top: 68%;
+    left: 12%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .pentagram .money {
+    top: 64%;
+    left: 16%;
+  }
+}
+
+@media (max-width: 845px) {
+  .pentagram .money {
+    top: 67%;
+    left: 12%;
+  }
+}
+
+@media (max-width: 780px) {
+  .pentagram .money {
+    top: 67%;
+    left: 12%;
+  }
+}
+
+@media (max-width: 600px) {
+  .pentagram .money {
+    top: 70%;
+    left: 7%;
+  }
+}
+
+.pentagram .money__circle {
+  background-color: #609A33;
+}
+
+.pentagram .money__text {
+  text-align: left;
+}
+
+.pentagram .business {
+  width: 25%;
+  position: absolute;
+  top: 33%;
+  left: 13%;
+}
+
+@media (max-width: 1900px) {
+  .pentagram .business {
+    top: 32%;
+    left: 12.5%;
+  }
+}
+
+@media (max-width: 1800px) {
+  .pentagram .business {
+    top: 31%;
+    left: 11%;
+  }
+}
+
+@media (max-width: 1700px) {
+  .pentagram .business {
+    top: 28%;
+    left: 9.5%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .pentagram .business {
+    top: 26%;
+    left: 7%;
+  }
+}
+
+@media (max-width: 1465px) {
+  .pentagram .business {
+    top: 29%;
+    left: 4%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .pentagram .business {
+    top: 32%;
+    left: 12%;
+  }
+}
+
+@media (max-width: 845px) {
+  .pentagram .business {
+    top: 31%;
+    left: 7%;
+  }
+}
+
+@media (max-width: 800px) {
+  .pentagram .business {
+    top: 29%;
+    left: 6.5%;
+  }
+}
+
+@media (max-width: 780px) {
+  .pentagram .business {
+    top: 29%;
+    left: 7.5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .pentagram .business {
+    left: 2%;
+  }
+}
+
+.pentagram .business__circle {
+  background-color: #29773B;
+}
+
+.pentagram .business__text {
+  text-align: left;
+}
+
+.pentagram .business .fa-clipboard {
+  margin-left: 0.2em;
+}
+
+.enroll {
+  background-color: #2E404D;
+  width: 45%;
+}
+
+@media (max-width: 1050px) {
+  .enroll {
+    width: 80%;
+    margin: 5em auto;
+  }
+}
+
+@media (max-width: 780px) {
+  .enroll {
+    width: 90%;
+  }
+}
+
+.enroll__text {
+  color: #ccc;
+  width: 80%;
+  margin: 1em auto;
+  font-size: 1.9em;
+  text-align: justify;
+  text-align-last: left;
+  line-height: 1.5em;
+}
+
+@media (max-width: 1465px) {
+  .enroll__text {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 1320px) {
+  .enroll__text {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 1180px) {
+  .enroll__text {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 1050px) {
+  .enroll__text {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 890px) {
+  .enroll__text {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 780px) {
+  .enroll__text {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 550px) {
+  .enroll__text {
+    font-size: 1.2em;
+  }
+}
+
+.enroll__group-text {
+  color: #60E6D6;
+  text-align: center;
+  width: 95%;
+  margin: 1em auto;
+  font-size: 2.5em;
+  line-height: 1.5em;
+}
+
+@media (max-width: 1465px) {
+  .enroll__group-text {
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 1320px) {
+  .enroll__group-text {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 1180px) {
+  .enroll__group-text {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 1050px) {
+  .enroll__group-text {
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 890px) {
+  .enroll__group-text {
+    font-size: 1.8em;
+    margin: 2em auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .enroll__group-text {
+    font-size: 1.4em;
+  }
+}
+
+.enroll__button {
+  background-color: #B33B39;
+  color: #fff;
+  width: 80%;
+  border-radius: 15px;
+  text-align: center;
+  padding: .5em;
+  margin: 1.5em auto;
+  font-size: 2.5em;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+@media (max-width: 1465px) {
+  .enroll__button {
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 1320px) {
+  .enroll__button {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 1180px) {
+  .enroll__button {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 1050px) {
+  .enroll__button {
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 890px) {
+  .enroll__button {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 550px) {
+  .enroll__button {
+    font-size: 1.4em;
+  }
+}
+
+.enroll__button:hover {
+  cursor: pointer;
+  background-color: #cc6563;
+}
+/*# sourceMappingURL=main.css.map */
