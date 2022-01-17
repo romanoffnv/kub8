@@ -1,0 +1,211 @@
+$border: solid grey;
+$width1900: 1900px;
+@mixin width1900 {
+    @media (max-width: #{$width1900}) {
+        @content;
+    }
+}
+$width1850: 1850px;
+@mixin width1850 {
+    @media (max-width: #{$width1850}) {
+        @content;
+    }
+}
+
+$width1800: 1800px;
+@mixin width1800 {
+    @media (max-width: #{$width1800}) {
+        @content;
+    }
+}
+
+$width1775: 1775px;
+@mixin width1775 {
+    @media (max-width: #{$width1775}) {
+        @content;
+    }
+}
+$width1700: 1700px;
+@mixin width1700 {
+    @media (max-width: #{$width1700}) {
+        @content;
+    }
+}
+$width1600: 1600px;
+@mixin width1600 {
+    @media (max-width: #{$width1600}) {
+        @content;
+    }
+}
+$width1580: 1580px;
+@mixin width1580 {
+    @media (max-width: #{$width1580}) {
+        @content;
+    }
+}
+$width1563: 1563px;
+@mixin width1563 {
+    @media (max-width: #{$width1563}) {
+        @content;
+    }
+}
+$width1530: 1530px;
+@mixin width1530 {
+    @media (max-width: #{$width1530}) {
+        @content;
+    }
+}
+
+$width1500: 1500px;
+@mixin width1500 {
+    @media (max-width: #{$width1500}) {
+        @content;
+    }
+}
+
+$width1465: 1465px;
+@mixin width1465 {
+    @media (max-width: #{$width1465}) {
+        @content;
+    }
+}
+$width1430: 1430px;
+@mixin width1430 {
+    @media (max-width: #{$width1430}) {
+        @content;
+    }
+}
+$width1400: 1400px;
+@mixin width1400 {
+    @media (max-width: #{$width1400}) {
+        @content;
+    }
+}
+$width1350: 1350px;
+@mixin width1350 {
+    @media (max-width: #{$width1350}) {
+        @content;
+    }
+}
+$width1320: 1320px;
+@mixin width1320 {
+    @media (max-width: #{$width1320}) {
+        @content;
+    }
+}
+$width1305: 1305px;
+@mixin width1305 {
+    @media (max-width: #{$width1305}) {
+        @content;
+    }
+}
+$width1250: 1250px;
+@mixin width1250 {
+    @media (max-width: #{$width1250}) {
+        @content;
+    }
+}
+$width1215: 1215px;
+@mixin width1215 {
+    @media (max-width: #{$width1215}) {
+        @content;
+    }
+}
+$width1180: 1180px;
+@mixin width1180 {
+    @media (max-width: #{$width1180}) {
+        @content;
+    }
+}
+$width1118: 1118px;
+@mixin width1118 {
+    @media (max-width: #{$width1118}) {
+        @content;
+    }
+}
+$width1050: 1050px;
+@mixin width1050 {
+    @media (max-width: #{$width1050}) {
+        @content;
+    }
+}
+$width970: 970px;
+@mixin width970 {
+    @media (max-width: #{$width970}) {
+        @content;
+    }
+}
+$width890: 890px;
+@mixin width890 {
+    @media (max-width: #{$width890}) {
+        @content;
+    }
+}
+$width845: 845px;
+@mixin width845 {
+    @media (max-width: #{$width845}) {
+        @content;
+    }
+}
+$width800: 800px;
+@mixin width800 {
+    @media (max-width: #{$width800}) {
+        @content;
+    }
+}
+$width780: 780px;
+@mixin width780 {
+    @media (max-width: #{$width780}) {
+        @content;
+    }
+}
+$width720: 720px;
+@mixin width720 {
+    @media (max-width: #{$width720}) {
+        @content;
+    }
+}
+$width700: 700px;
+@mixin width700 {
+    @media (max-width: #{$width700}) {
+        @content;
+    }
+}
+$width654: 654px;
+@mixin width654 {
+    @media (max-width: #{$width654}) {
+        @content;
+    }
+}
+
+$width630: 630px;
+@mixin width630 {
+    @media (max-width: #{$width630}) {
+        @content;
+    }
+}
+$width600: 600px;
+@mixin width600 {
+    @media (max-width: #{$width600}) {
+        @content;
+    }
+}
+$width550: 550px;
+@mixin width550 {
+    @media (max-width: #{$width550}) {
+        @content;
+    }
+}
+$width510: 510px;
+@mixin width510 {
+    @media (max-width: #{$width510}) {
+        @content;
+    }
+}
+$width400: 400px;
+@mixin width400 {
+    @media (max-width: #{$width400}) {
+        @content;
+    }
+}
+
