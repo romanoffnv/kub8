@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/header-discount.css">
+    <link rel="stylesheet" href="/styles/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="/img/logo.png" alt="logo" />
+        </div>
+        <div class="topMenu">
+          <ul class="topNavi">
+            <li><a href="https://kub8.ru/">ГЛАВНАЯ</a></li>
+            <li><a href="https://kub8.ru/technology/">ТЕХНОЛОГИЯ</a></li>
+            <li><a href="https://kub8.ru/academy/">АКАДЕМИЯ</a></li>
+            <li><a href="https://kub8.ru/profession/">ПРОФЕССИЯ</a></li>
+            <li><a href="https://kub8.ru/reviews/">ОТЗЫВЫ</a></li>
+            <li><a href="https://kub8.ru/blog/">БЛОГ</a></li>
+            <li><a href="https://kub8.ru/video/">ВИДЕО</a></li>
+          </ul>
+        </div>
+        <div class="sideMenu" id = 'sideMenu'>
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="sideNavi" id = 'sideNavi'>
+          <li><a href="https://kub8.ru/">ГЛАВНАЯ</a></li>
+            <li><a href="https://kub8.ru/technology/">ТЕХНОЛОГИЯ</a></li>
+            <li><a href="https://kub8.ru/academy/">АКАДЕМИЯ</a></li>
+            <li><a href="https://kub8.ru/profession/">ПРОФЕССИЯ</a></li>
+            <li><a href="https://kub8.ru/reviews/">ОТЗЫВЫ</a></li>
+            <li><a href="https://kub8.ru/blog/">БЛОГ</a></li>
+            <li><a href="https://kub8.ru/video/">ВИДЕО</a></li>
+        </ul>
+      </nav>
+      <header>
+        <div class="headerText">
+          <h1>Ревизия сценариев жизни</h1>
+          <p>
+            4 часа онлайн практикума <br />
+            Разбор вашей проблемы с экспертом <br />
+            <span class="bold">Андреем Антоновым</span>
+          </p>
+        </div>
+      </header>
+      <div class="discount">
+        <div class="price">
+          <div class="description">
+            <p>Цена со <br /><span class="bold">скидкой 50%</span></p>
+          </div>
+          <div class="number">
+            <p class="num">2200</p>
+            <i class="fas fa-ruble-sign"></i>
+          </div>
+        </div>
+        <div class="time">
+          <div class="description">
+            <p class="endSpecial">До конца <br /> акции:</p>
+          </div>
+          <div class="number">
+            <p class="num" id = 'countdown'></div>
+        </div>
+      </div>
+      <main>
+        <div class="pentagram">
+          <div class="pentagram__polygon">
+            <div class = 'pentagram__polygonInner'>
+              
+            </div>
+          </div>
+          <div class="health">
+            <p class="health__text txt">Здоровье</p>
+            <div class="health__circle circ">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+          </div>
+          <div class="friends">
+            <p class="friends__text txt">Друзья</p>
+            <div class="friends__circle circ">
+              <i class="fas fa-user-friends"></i>
+            </div>
+          </div>
+          <div class="relationship">
+            <p class="relationship__text txt">Отношения</p>
+            <div class="relationship__circle circ">
+              <i class="far fa-handshake"></i>
+            </div>
+          </div>
+          <div class="money">
+            <p class="money__text txt">Деньги</p>
+            <div class="money__circle circ">
+              <i class="fas fa-coins"></i>
+            </div>
+          </div>
+          <div class="business">
+            <p class="business__text txt">Дело</p>
+            <div class="business__circle circ">
+              <i class="far fa-clipboard"></i>
+            </div>
+          </div>
+        </div>
+        <div class="enroll">
+          <p class="enroll__text">
+            Вы получите ответ на вопрос о своей жизненной ситуации и построите
+            путь к гармоничным отношениям, любимому делу и финансовой свободе
+          </p>
+          <p class="enroll__group-text">
+            Разбор в группе <br />
+            10-20 человек
+          </p>
+          <div class="enroll__button" id = "enroll">Записаться</div>
+        </div>
+      </main>
+      <footer>
+        <div class="social">
+          <a 
+          href="https://www.instagram.com/andreyantonov888/" 
+          target="_blank"
+          rel = "noopener noreferrer">
+          <i class="fab fa-instagram"></i></a>
+          <a 
+          href="https://vk.com/andreyantonov888" 
+          target="_blank"
+          rel = "noopener noreferrer"><i class="fab fa-vk"></i></a>
+          <a 
+          href="https://www.facebook.com/andreyantonov888" 
+          target="_blank"
+          rel = "noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
+          <a 
+          href="https://www.youtube.com/channel/UCi55fo1ga1RJP3smY9Oba3g" 
+          target="_blank"
+          rel = "noopener noreferrer"><i class="fab fa-youtube"></i></a>
+        </div>
+      </footer>
+    </div>
+    <script src = '/script.js'></script>
+  </body>
+</html>
